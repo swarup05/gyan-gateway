@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styleregister.css">
+</head>
+<body>
+    <div class="box">
+        <h1 class="p1">Register</h1>
+        <p class="p2">Create an account to get started</p>
+        <form id="registrationForm" action="/register" method="POST" onsubmit="return validateForm()">
+            <input type="text" class="inp1" name="name" placeholder="Your Name" required>
+            <input type="email" class="inp1" name="email" placeholder="Your Email" required>
+            <input type="text" class="inp1" name="username" placeholder="Enter your username" required>
+            <input type="password" class="inp1" name="password" placeholder="Choose a Password" required>
+            <button type="submit" class="btn2">Sign Up</button>
+        </form>
+        <p class="p3">Already have an account? <a href="index.html" class="a1">Log in</a></p>
+        <p class="p4">By signing up, you agree to our <a href="#">terms</a> and acknowledge you've read our <a href="#">privacy policy</a></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["registrationForm"]["firstName"].value;
+            if (x == "") {
+                alert("First Name must be filled out");
+                return false;
+            }
+            // You can add more validation rules here
+            return true;
+        }
+    </script>
+</body>
+</html>

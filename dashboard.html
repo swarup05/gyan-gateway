@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>GyanGateway - Minor project of team HAPP</title>
+  <meta name="title" content="EduWeb - A minor project made by team HAPP">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo2.jpg" width="70" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar style="position: sticky;">
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <span id="username-placeholder"></span>
+
+        <!-- Button with placeholder text -->
+        <a href="#" class="btn has-before">
+        <span class="span" id="try-for-free">Try for free</span>
+        </a>
+
+          
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              Stay Organized, <span class="span">Ace </span> your Courses
+            </h1>
+
+            <p class="hero-text">
+              Your Ultimate One-Stop Hub for Comprehensive Notes and Course Materials
+            </p>
+
+            <a href="#college" class="btn has-before">
+              <span class="span">Find courses</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="./assets/images/hero-banner-1.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="./assets/images/hero-banner-2.jpg" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+
+
+            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category" id="college">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Categories</p> -->
+
+          <h2 class="h2 section-title">
+            College <span class="span">Courses</span> 
+          </h2>
+
+          <p class="section-text">
+            Notes and question papers from 1st year to Final year.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card" style="--color: 170, 75%, 41%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
+                    alt="Online Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="notesfirst.html" class="card-title">First Year </a>
+                </h3>
+
+                <p class="card-text">
+                  Essential first-year notes for academic success. Detailed materials to excel in foundational courses.
+                </p>
+
+                <span class="card-badge">5 Subjects</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 351, 83%, 61%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
+                    alt="Non-Degree Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="notessecond.html" class="card-title">Second Year</a>
+                </h3>
+
+                <p class="card-text">
+                  Essential materials for second-year courses to deepen your understanding
+                </p>
+
+                <span class="card-badge">6 Subjects</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 229, 75%, 58%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                    alt="Off-Campus Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="notesthird.html" class="card-title">Third Year</a>
+                </h3>
+
+                <p class="card-text">
+                  Key resources for third-year courses to advance your knowledge and succeed in your studies
+                </p>
+
+                <span class="card-badge">5 Subjects</span>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card" style="--color: 42, 94%, 55%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
+                    alt="Hybrid Distance Programs" class="img">
+                </div>
+
+                <h3 class="h3">
+                  <a href="notesfourth.html" class="card-title">Fourth Year</a>
+                </h3>
+
+                <p class="card-text">
+                  Important notes for fourth-year courses to specialize your learning and achieve academic excellence
+                </p>
+
+                <span class="card-badge">3 Subjects</span>
+
+              </div>
+            
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          <p class="section-subtitle">Skill Development Courses</p>
+
+          <h2 class="h2 section-title">Pick A Course To Get Started</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/webdbanner.jpeg" width="370" height="220" loading="lazy"
+                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 to 12 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner to specialization</span>
+
+                  <h3 class="h3">
+                    <a href="webd.html" class="card-title">Web Development</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <!-- <p class="rating-text">(4.3/105 Rating)</p> -->
+
+                  </div>
+
+                  <data class="price" value="29">Free and paid courses both</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li>
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">20 Students</span>
+                    </li> -->
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/dsa.png" width="370" height="220" loading="lazy"
+                    alt="DSA" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 to 12 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Advanced</span>
+
+                  <h3 class="h3">
+                    <a href="dsa.html" class="card-title">Data Structures and algorithm</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <!-- <p class="rating-text">(4 /200 Rating)</p> -->
+
+                  </div>
+
+                  <data class="price" value="49">Free and paid courses both</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li>
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">35 Students</span>
+                    </li> -->
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="./assets/images/Cloud.jpg" width="370" height="220" loading="lazy"
+                    alt="The Complete Camtasia Course for Content Creators" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">3 to 6 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Professional</span>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Cloud Computing</a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <!-- <p class="rating-text">(4.6 / 76 Rating)</p> -->
+
+                  </div>
+
+                  <data class="price" value="35">Free and paid courses both</data>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 courses</span>
+                    </li>
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">18 Students</span>
+                    </li> -->
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="SkillCourses.html" class="btn has-before">
+            <span class="span">Browse more courses</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #ABOUT
+    
+
+       <div id="about">
+
+        
+    <div class="wrapper">
+
+      <div class="title">
+          <h4>Our Team Section</h4>
+      </div>
+
+      <div class="card_Container">
+
+          <div class="card">
+
+              <div class="imbBx">
+                  <img src="./assets/images/Prajwal.jpg" alt="">
+              </div>
+
+              <div class="content">
+                  <div class="contentBx">
+                      <h3>Prajwal Ganar <br><span>Role</span></h3>
+                  </div>
+                  <ul class="sci">
+                      <li style="--i: 1">
+                          <a href="https://twitter.com/PrajwalGanar787"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li style="--i: 2">
+                          <a href="https://github.com/Prajwal435"><i class="fa-brands fa-github"></i></a>
+                      </li>
+                      <li style="--i: 3">
+                          <a href="https://www.linkedin.com/in/prajwal-ganar-7a3a2225b/"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
+
+          <div class="card">
+
+              <div class="imbBx">
+                  <img src="" alt="">
+              </div>
+
+              <div class="content">
+                  <div class="contentBx">
+                      <h3> <br><span>Role</span></h3>
+                  </div>
+                  <ul class="sci">
+                      <li style="--i: 1">
+                          <a href="https://twitter.com/shelby__555?t=_30tyIiwpV6LWRmnGJLA_Q&s=08"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li style="--i: 2">
+                          <a href="https://github.com/shelbys555"><i class="fa-brands fa-github"></i></a>
+                      </li>
+                      <li style="--i: 3">
+                          <a href="https://www.linkedin.com/in/prathamesh-shelke-529b36275/"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
+
+          <div class="card">
+
+              <div class="imbBx">
+                  <img src="" alt="">
+              </div>
+
+              <div class="content">
+                  <div class="contentBx">
+                      <h3> <br><span>Role</span></h3>
+                  </div>
+                  <ul class="sci">
+                      <li style="--i: 1">
+                          <a href="https://github.com/harshyyy26"><i class="fa-brands fa-github"></i></a>
+                      </li>
+                      <li style="--i: 2">
+                          <a href="https://twitter.com/harshyyy_26"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li style="--i: 3">
+                          <a href="https://www.linkedin.com/in/harshal-giri-a8155b2a7/"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
+
+          <div class="card">
+
+              <div class="imbBx">
+                  <img src="" alt="">
+              </div>
+
+              <div class="content">
+                  <div class="contentBx">
+                      <h3> <br><span>Role</span></h3>
+                  </div>
+                  <ul class="sci">
+                      <li style="--i: 1">
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li style="--i: 2">
+                          <a href="https://github.com/avishkar-004"><i class="fa-brands fa-github"></i></a>
+                      </li>
+                      <li style="--i: 3">
+                          <a href="https://www.linkedin.com/in/avishkar-1204p/"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+       </div>
+
+
+
+
+
+ -->
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Function to get URL parameter by name
+    function getUrlParameter(name) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        const results = regex.exec(window.location.href);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Retrieve the username from the URL query parameter
+    const username = getUrlParameter('username');
+
+    // Update the text of the button with the username
+    document.getElementById('try-for-free').textContent = username;
+</script>
+</body>
+
+</html>

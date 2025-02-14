@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body style="background-image: url('./assets/images/hero-bg.svg');">
+    <div class="container">
+        <div class="left-side">
+            <video width="100%" class="big-image" height="100%" autoplay loop muted >
+                <source src="https://media.istockphoto.com/id/149728395/video/professor-writing-on-blackboard.mp4?s=mp4-640x640-is&k=20&c=dGCLfDSgnB9xlSWzX1XzXvvknyGkScHcVqE1Pa1BQRY=" >
+               
+            </video>
+        </div>
+        
+        <div class="box" style="background-color: white;">
+            <h1 class="p1">eduweb</h1>
+            <p class="p2">Welcome back <b>Sir/Mam</b></p>
+            <form action="/login" method="POST">
+                <input type="text" class="inp1" name="username" placeholder="Enter your username" required>
+                <input type="password" class="inp1" name="password" placeholder="Enter your password" required>
+                <button type="submit" class="btn2">Log in as Teacher</button>
+            </form>
+            
+            <p id="loginasadmin"><a href="adminlogin.html" class="a2">I am Admin</a></p>
+            <p id="loginasadmin"><a href="index.html" class="a2">I am a Student</a></p>
+    
+        </div>
+    </div>
+</body>
+</html>

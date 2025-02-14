@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Year</title>
+    <link rel="stylesheet" href="stylenotes.css">
+</head>
+<body style="background-image: url('./assets/images/hero-bg.svg');">
+    <div class="nav-bar">
+        <div class="nav-left">
+            <img src="/images/eduweb.png" width="150px" alt="imglogo">
+        </div>
+        <div class="nav-right">
+            <div class="nav-title">
+                <a href="dashboard.html" class="nav-content">Home</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#college" class="nav-content">Courses</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#about" class="nav-content">About</a>
+            </div>
+            <div class="nav-title">
+                <a href="contact.html" class="nav-content">Contact Us</a>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="box">
+        <div class="intro">
+            <h1 class="p1">
+                SY Engineering Notes
+            </h1>
+            
+            <p class="p2">
+                Second Year Engineering notes as per the second year syllabus declared by Mitaoe
+                officially.The below notes are provided for Second Year Engineering Students under Pune University. These notes
+                are contributed by the students from Various colleges & Universities.
+            </p>
+        </div>
+
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Advanced Data Structures</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Advanced Data Structures')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Applied Mathematics</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Applied Mathematics')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Computer Graphics</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Computer Graphics')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Computer Organization and Architecture</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Computer Organization and Architecture')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Database Management System</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Database Management System')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Data Structures</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Data Structures')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Discrete Structure and Graph Theory</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Discrete Structure and Graph Theory')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Engineering Informatics</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Engineering Informatics')">Click Here</button>
+        </div>
+        
+    </div>
+
+    <script>
+        function navigateToFiles(subject) {
+            window.location.href = `NotesPage.html?subject=${subject}`;
+        }
+    </script>
+</body>
+</html>

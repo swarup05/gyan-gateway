@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Year</title>
+    <link rel="stylesheet" href="stylenotes.css">
+</head>
+<body style="background-image: url('./assets/images/hero-bg.svg');">
+    <div class="nav-bar">
+        <div class="nav-left">
+            <img src="/images/eduweb.png" width="150px" alt="imglogo">
+        </div>
+        <div class="nav-right">
+            <div class="nav-title">
+                <a href="dashboard.html" class="nav-content">Home</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#college" class="nav-content">Courses</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#about" class="nav-content">About</a>
+            </div>
+            <div class="nav-title">
+                <a href="contact.html" class="nav-content">Contact Us</a>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="box">
+        <div class="intro">
+            <h1 class="p1">
+                TY Engineering Notes
+            </h1>
+            
+            <p class="p2">
+                Third Year Engineering notes as per the third year syllabus declared by Mitaoe
+                officially.The below notes are provided for Third Year Engineering Students under Pune University. These notes
+                are contributed by the students from Various colleges & Universities.
+            </p>
+        </div>
+
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Compiler Design</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Compiler Design')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Cyber Security and Forensics</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Cyber Security and Forensics')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Design Analysis and Algorithms</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Design Analysis and Algorithms')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Machine Learning</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Machine Learning')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Predictive Analytics</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Predictive Analytics')">Click Here</button>
+        </div>
+        
+    </div>
+
+    <script>
+        function navigateToFiles(subject) {
+            window.location.href = `NotesPage.html?subject=${subject}`;
+        }
+    </script>
+</body>
+</html>

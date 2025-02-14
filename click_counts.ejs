@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Counts</title>
+</head>
+<body>
+  <h1>Click Counts</h1>
+  <ul>
+    <% clickCounts.forEach(click => { %>
+      <li>Link ID: <%= click.link_id %>, Count: <%= click.count %>, Click Date: <%= click.click_date %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

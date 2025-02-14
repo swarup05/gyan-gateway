@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Page</title>
+    <link rel="stylesheet" href="notepage.css"> <!-- Include external CSS file -->
+</head>
+
+<body style="background-image: url('./assets/images/hero-bg.svg');">
+    <div class="nav-bar">
+        <div class="nav-left">
+            <img src="/images/eduweb.png" width="150px" alt="imglogo">
+        </div>
+        <div class="nav-right">
+            <div class="nav-title">
+                <a href="dashboard.html" class="nav-content">Home</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#college" class="nav-content">Courses</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#about" class="nav-content">About</a>
+            </div>
+            <div class="nav-title">
+                <a href="contact.html" class="nav-content">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+    
+    <div class="file-box1">
+        <table class="file-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="download-links">
+                <!-- File items will be dynamically loaded here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Function to fetch files based on subject and display download links in a table
+        function fetchFilesAndDisplay() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subject = urlParams.get('subject');
+
+            fetch(`/files?subject=${subject}`)
+                .then(response => response.json())
+                .then(files => {
+                    const downloadLinksTable = document.getElementById('download-links');
+                    downloadLinksTable.innerHTML = ''; // Clear previous content
+                    
+                    files.forEach(file => {
+                        // Create a new row for each file
+                        const row = document.createElement('tr');
+
+                        // File Name column
+                        const fileNameCell = document.createElement('td');
+                        fileNameCell.textContent = file.filename;
+                        row.appendChild(fileNameCell);
+
+                        // Actions column (Download and View buttons)
+                        const actionsCell = document.createElement('td');
+
+                        // Download Button
+                        const downloadButton = document.createElement('button');
+                        downloadButton.textContent = 'Download';
+                        downloadButton.classList.add('btn', 'btn-primary', 'download-button'); // Add classes for styling
+                        downloadButton.onclick = () => downloadFile(file.filepath, file.filename);
+                        actionsCell.appendChild(downloadButton);
+                        
+                        // View Button
+                        const viewButton = document.createElement('button');
+                        viewButton.textContent = 'View';
+                        viewButton.classList.add('btn', 'btn-success', 'view-button'); // Add classes for styling
+                        viewButton.onclick = () => viewFile(file.filepath, file.filename);
+                        actionsCell.appendChild(viewButton);
+
+                        row.appendChild(actionsCell);
+
+                        // Append the row to the table body
+                        downloadLinksTable.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error retrieving files:', error);
+                });
+        }
+
+        // Function to download a file
+        function downloadFile(filepath, filename) {
+            window.location.href = `/download?filepath=${encodeURIComponent(filepath)}&filename=${encodeURIComponent(filename)}`;
+        }
+
+        // Function to view a file
+        function viewFile(filepath, filename) {
+            window.location.href = `/view?filepath=${encodeURIComponent(filepath)}&filename=${encodeURIComponent(filename)}`;
+        }
+
+        // Call the fetchFilesAndDisplay function when the page loads
+        window.onload = fetchFilesAndDisplay;
+    </script>
+</body>
+
+</html>

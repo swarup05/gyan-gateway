@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="webdtable.css">
+</head>
+<body style="background-image: url('./assets/images/hero-bg.svg');">
+    <div class="webtable">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Link ID</th>
+                <th>Click Count</th>
+                <th>Course name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Use JavaScript to dynamically populate table rows with data -->
+        </tbody>
+    </table>
+    </div>
+
+    <script>
+        // Function to fetch data from server and populate table rows
+        async function fetchData() {
+            const response = await fetch('/click-counts');
+            const data = await response.json();
+            
+            const tbody = document.querySelector('tbody');
+            tbody.innerHTML = '';
+
+            data.forEach(click => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${click.link_id}</td>
+                    <td>${click.count}</td>
+                    <td>${click.name}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Call fetchData function when the page loads
+        window.onload = fetchData;
+    </script>
+</body>
+</html>

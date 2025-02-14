@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- 
+      - primary meta tag
+    -->
+    <title>EduWeb - Minor project of team HAPP</title>
+    <meta name="title" content="EduWeb - Minor project of team HAPP">
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  
+  </head>
+<body>
+    <!-- 
+    - #HEADER
+  -->
+         
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar style="position: sticky;">
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="dashboard.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#college" class="navbar-link" data-nav-link>College Courses</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart" title="Cart">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+       
+
+        
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+    
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/61/edc4c8538e49fd97efecab1665e969/GenAI_Logo-Image_1200x1200pxl-copy.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Web development" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner to specialization</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/specializations/generative-ai-for-everyone
+
+                    " target="_blank" class="tracked-link" data-link-id="1"class="card-title">Generative AI Fundamentals Specialization
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹3699</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">105,816 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://talentsprint.com/course/ai-machine-learning-iiit-hyderabad/images/header-graphic-aiml.webp
+
+                  " width="370" height="220" loading="lazy"
+                    alt="DSA" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Advanced</span>
+
+                  <h3 class="h3">
+                    <a href="https://iimkozhikode.emeritus.org/iimk-data-science-machine-learning-and-artificial-intelligence?utm_source=Google&utm_medium=Search&utm_campaign=B-365D_IN_GG_SE_IIMK-DSAI_Core_Tier1_Exact&utm_content=AI_ML&utm_term=Ai%20ml%20course&gad_source=1&gclid=CjwKCAjw88yxBhBWEiwA7cm6pTqo-Ot0mKKZLYMSjU40XFqToPdy0nTTYIlIyD0JgAvd1yloHzvIABoCAnoQAvD_BwE
+
+                    "  target="_blank" class="tracked-link" data-link-id="2">Professional Certificate Programme in Data Science and Artificial Intelligence
+
+                    
+                    
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.6 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">₹37500</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">2000 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://intellectualpoint.com/wp-content/uploads/2020/02/Machine-Learning-AI-scaled.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="cloud" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Professional</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.udemy.com/course/artificial-intelligence-in-unity/?couponCode=IND21PM
+
+                    " target="_blank" class="tracked-link" data-link-id="3" class="card-title">The Beginner's Guide to Artificial Intelligence
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7  Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">Free </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">16,152 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <br>
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://www.igmguru.com/uploads/products/machine-learning-training-igmguru_1499895199_xl.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">6 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Expert instruction</span>
+
+                  <h3 class="h3">
+                    <a href="https://onlinecourses.nptel.ac.in/noc22_cs24/preview
+
+                    " target="_blank" class="tracked-link" data-link-id="4" class="card-title">Machine Learning, ML
+
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.3 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹31,400</data>
+
+                    <ul class="card-meta-list">
+                  
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">20000 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/63/b72069efbc42a689ccd470cfecafd9/unnamed.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner </span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/learn/introduction-to-generative-ai
+
+                    " target="_blank" class="tracked-link" data-link-id="5" class="card-title" target="_blank">Introduction to Generative AI
+                    
+                    
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">Free</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">115 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://cdn1.expresscomputer.in/wp-content/uploads/2023/05/24151924/EC_Generative_AI_03_750.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">115 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Begineer</span>
+
+                  <h3 class="h3">
+                    <a href="https://onlinecourses.nptel.ac.in/noc22_cs56/preview
+
+                    " target="_blank" class="tracked-link" data-link-id="6" class="card-title">An Introduction to Artificial Intelligence
+
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 /79 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹15,000</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">139,285 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://apsinno.com/image/AI-ML-Training.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.udemy.com/course/computer-vision-kerascv/?couponCode=IND21PM
+
+                    " target="_blank" class="tracked-link" data-link-id="7" class="card-title">Machine Learning: Modern Computer Vision & Generative AI
+
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">Free </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3,617 reviews</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://dtmvamahs40ux.cloudfront.net/gl-academy/course/course-682-AIML.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">20 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.edx.org/certificates/professional-certificate/ibm-generative-ai-for-everyone?webview=false&campaign=Generative+AI+for+Everyone&source=edx&product_category=professional-certificate&placement_url=https%3A%2F%2Fwww.edx.org%2Flearn%2Fartificial-intelligence
+
+                    " target="_blank" class="tracked-link" data-link-id="8" class="card-title">Generative AI for Everyone
+
+
+                </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">Free</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">350 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/ac/31c1233bd3422ca088055ee4509d09/DeepLearning_GenAI_with_LLMs_Centered_Banner_1000x1000.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&q=50&fit=crop
+
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">150 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Begineer to Intermediate</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/learn/generative-ai-with-llms
+
+                    " target="_blank" class="tracked-link" data-link-id="9" class="card-title">Generative AI with Large Language Models
+
+                </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹3499</data>
+
+                  <ul class="card-meta-list">
+<!-- 
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">7900 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          
+          
+        
+
+        </div>
+      </section>
+
+      
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Attach click event listeners to all tracked links
+    document.querySelectorAll('.tracked-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            const linkId = this.getAttribute('data-link-id');
+            // Send AJAX request to increment click count for this link
+            fetch(`/increment-click-count/${linkId}`, { method: 'POST' })
+                .then(response => {
+                    if (!response.ok) {
+                        console.error('Failed to increment click count');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Year</title>
+    <link rel="stylesheet" href="stylenotes.css">
+</head>
+<body style="background-image: url('./assets/images/hero-bg.svg');">
+    <div class="nav-bar">
+        <div class="nav-left">
+            <img src="/images/eduweb.png" width="150px" alt="imglogo">
+        </div>
+        <div class="nav-right">
+            <div class="nav-title">
+                <a href="dashboard.html" class="nav-content">Home</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#college" class="nav-content">Courses</a>
+            </div>
+            <div class="nav-title">
+                <a href="./dashboard.html#about" class="nav-content">About</a>
+            </div>
+            <div class="nav-title">
+                <a href="contact.html" class="nav-content">Contact Us</a>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="box">
+        <div class="intro">
+            <h1 class="p1">
+                FY Engineering Notes
+            </h1>
+            
+            <p class="p2">
+                First Year Engineering notes as per the first year syllabus declared by Mitaoe
+                officially.The below notes are provided for First Year Engineering Students under Pune University. These notes
+                are contributed by the students from Various colleges & Universities.
+            </p>
+        </div>
+
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Applied Mechanics</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Applied Mechanics')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Electronics and Electrical Engineering</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Electronics and Electrical Engineering')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Calculus and Differential Equations</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Calculus and Differential Equations')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Science of Nature</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Science of Nature')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Essentials of Data Science</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Essentials of Data Science')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Engineering Physics</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Engineering Physics')">Click Here</button>
+        </div>
+        <div class="subject">
+            <div class="sub-left">
+                <img src="/images/pdf.png" style="width: 20px;" alt="">
+                <p class="p3">Statistics and Integral Calculus</p>
+            </div>
+            <button class="btn" onclick="navigateToFiles('Statistics and Integral Calculus')">Click Here</button>
+        </div>
+        
+    </div>
+
+    <script>
+        function navigateToFiles(subject) {
+            window.location.href = `NotesPage.html?subject=${subject}`;
+        }
+    </script>
+</body>
+</html>

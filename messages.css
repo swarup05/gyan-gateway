@@ -1,0 +1,89 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Table Styles */
+#feedbackTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#feedbackTable thead {
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid #333;
+}
+
+#feedbackTable th, #feedbackTable td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#feedbackTable th {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#feedbackTable tr:nth-child(even) .delete-btn:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+#feedbackTable tr:hover , .delete-btn:hover {
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Delete Button Styles */
+.delete-btn {
+   
+    color:red;
+    background-color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+
+.delete-btn:hover{
+     font-weight: 1000;
+}
+
+
+.delete-btn::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    margin-right: 8px; 
+    
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

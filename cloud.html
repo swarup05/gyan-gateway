@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- 
+      - primary meta tag
+    -->
+    <title>EduWeb - Minor project of team HAPP</title>
+    <meta name="title" content="EduWeb - Minor project of team HAPP">
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  
+  </head>
+<body>
+    <!-- 
+    - #HEADER
+  -->
+         
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar style="position: sticky;">
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="dashboard.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#college" class="navbar-link" data-nav-link>College Courses</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart" title="Cart">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+       
+
+        
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+    
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://www.upgrad.com/_ww3-next/image/?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FdWeb_550X572_DS%20IITB-e35184dcdf564932a782ee5cef057fd7.webp&w=1920&q=75
+                  " width="370" height="220" loading="lazy"
+                    alt="Web development" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner to specialization</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.upgrad.com/executive-pg-certification-in-cloud-computing-and-devops-iiit-bangalore/?utm_source=website&utm_medium=Organic&utm_campaign=share_button_PP
+                    " target="_blank" class="tracked-link" data-link-id="1"class="card-title">Cloud Computing and DevOps Program by IIITB
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹3699</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">105,816 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d1vwxdpzbgdqj.cloudfront.net/cloud-new-ui/search-new-banner.png
+                  " width="370" height="220" loading="lazy"
+                    alt="DSA" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Advanced</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.mygreatlearning.com/great-lakes-pgp-cloud-computing?&utm_source=Search&utm_medium=Cloud-certificate-online-ph-above24&utm_campaign=Cloud-t1-hi-computing-online-ph-above24&campaign_id=20000084599&adgroup_id=146839722463&ad_id=655559118440&utm_target=kwd-836926510734&Keyword=cloud%20computing%20online%20certificate&placement=&gad_source=1&gclid=CjwKCAjw88yxBhBWEiwA7cm6pWgxd2VmRPkxOP3JgL7WmrJ4kFiTL2WOLKrVJYtqFYjRZyJ7X7YLbxoCVcMQAvD_BwE
+                    "  target="_blank" class="tracked-link" data-link-id="2">Master AWS, Azure, DevOps & more                    
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.6 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">₹37500</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">2000 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d1.awsstatic.com/aws-educate/educate-badge-images/AWS-CredlyBadges_Educate-Start-With-Storage.3b5c6295bccf3883b924957cc3b3865a359656af.png
+                  " width="370" height="220" loading="lazy"
+                    alt="cloud" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Professional</span>
+
+                  <h3 class="h3">
+                    <a href="https://aws.amazon.com/education/awseducate/?gclid=CjwKCAjw88yxBhBWEiwA7cm6pfinArvkw9jeFFp34fqbWpPX8RDW2M5eAcRTTlGHNK0lQFq63yC_IRoCrrQQAvD_BwE&trk=d5f5086e-2756-4df0-af53-d57b79eb28a9&sc_channel=ps&ef_id=CjwKCAjw88yxBhBWEiwA7cm6pfinArvkw9jeFFp34fqbWpPX8RDW2M5eAcRTTlGHNK0lQFq63yC_IRoCrrQQAvD_BwE:G:s&s_kwcid=AL!4422!3!626310901326!p!!g!!learn%20cloud%20skills!11363780094!141492008385
+                    " target="_blank" class="tracked-link" data-link-id="3" class="card-title">AWS Educate
+                    
+                    
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7  Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">Free </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">16,152 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <br>
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/ec/3c083f33b34fbc8621066b0b6fd112/C-GCOPS-B_Understanding_Security_Operations_1200x1200_dark.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&fit=crop&q=50
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">6 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Expert instruction</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/learn/understanding-google-cloud-security-and-operations
+
+                    " target="_blank" class="tracked-link" data-link-id="4" class="card-title">Scaling with Google Cloud Operations
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.3 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹31,400</data>
+
+                    <ul class="card-meta-list">
+                  
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">20000 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://www.niit.com/india/sites/default/files/2022-07/PGP%20in%20Cloud%20Computing%20and%20SysOps_0.png
+
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner </span>
+
+                  <h3 class="h3">
+                    <a href="https://www.niit.com/india/pg-in-cloud-computing-course
+                    " target="_blank" class="tracked-link" data-link-id="5" class="card-title" target="_blank">PGP in Cloud Computing and SysOps
+
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">Free</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">115 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d1vwxdpzbgdqj.cloudfront.net/great_lakes_uni_img.png
+
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">115 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Begineer</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.mygreatlearning.com/cloud-computing/courses
+                    " target="_blank" class="tracked-link" data-link-id="6" class="card-title">PG Program in Cloud Computing
+                    
+                    
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 /79 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹15,000</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">139,285 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/f3/5d00cbdb784bee9e7ff6d4bbab1ebb/CloudComputingIntroduction.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=204&fit=crop&q=50
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/learn/introduction-to-cloud
+                    " target="_blank" class="tracked-link" data-link-id="7" class="card-title">Introduction to Cloud Computing
+                    
+                    
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">Free </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3,617 reviews</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCkll06nYLpWj8rbGeMkMpBn_XIlju3b_njO2ugG8Cuw&s
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">20 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.codecademy.com/learn/foundations-of-cloud-computing
+
+                    " target="_blank" class="tracked-link" data-link-id="8" class="card-title">Intro to Cloud Computing
+
+
+                </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">Free</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">350 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://iiht-kharghar.com/wp-content/uploads/Cloud-Computing-Course.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">150 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Begineer to Intermediate</span>
+
+                  <h3 class="h3">
+                    <a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials
+
+                    " target="_blank" class="tracked-link" data-link-id="9" class="card-title">Cloud Practitioner Essentials
+
+                </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹3499</data>
+
+                  <ul class="card-meta-list">
+<!-- 
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">7900 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          
+          
+        
+
+        </div>
+      </section>
+
+      
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Attach click event listeners to all tracked links
+    document.querySelectorAll('.tracked-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            const linkId = this.getAttribute('data-link-id');
+            // Send AJAX request to increment click count for this link
+            fetch(`/increment-click-count/${linkId}`, { method: 'POST' })
+                .then(response => {
+                    if (!response.ok) {
+                        console.error('Failed to increment click count');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    });
+</script>
+
+
+</body>
+</html>

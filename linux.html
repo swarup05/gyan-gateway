@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- 
+      - primary meta tag
+    -->
+    <title>EduWeb - Minor project of team HAPP</title>
+    <meta name="title" content="EduWeb - Minor project of team HAPP">
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  
+  </head>
+<body>
+    <!-- 
+    - #HEADER
+  -->
+         
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar style="position: sticky;">
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="dashboard.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#college" class="navbar-link" data-nav-link>College Courses</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart" title="Cart">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+       
+
+        
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+    
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://www.traininginbangalore.com/images/infographics/best-linux-training-in-bangalore-tib.jpg
+                  " width="370" height="220" loading="lazy"
+                    alt="Web development" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">2 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner to specialization</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.udemy.com/share/1013lo/
+                    " target="_blank" class="tracked-link" data-link-id="1"class="card-title">Complete Linux Training Course to Get Your Dream IT Job
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹3699</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">105,816 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image_variant/1b8d5d44dd84_w240.webp
+                  " width="370" height="220" loading="lazy"
+                    alt="DSA" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Advanced</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.classcentral.com/course/linux-the-linux-foundation-introduccion-a-linux-58665
+                    "  target="_blank" class="tracked-link" data-link-id="2">IntroducciÃ³n a Linux
+                    
+                    
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.6 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">₹37500</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">2000 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/d6/554730bda341178c8c2801a0603acd/Hands-on-Introduction-to-Linux_Final.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50
+                  " width="370" height="220" loading="lazy"
+                    alt="cloud" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Professional</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/learn/hands-on-introduction-to-linux-commands-and-shell-scripting
+                    " target="_blank" class="tracked-link" data-link-id="3" class="card-title">Hands-on Introduction to Linux Commands and Shell Scripting
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7  Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">Free </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">16,152 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <br>
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://training.linuxfoundation.org/wp-content/uploads/2020/11/lfcs_111820-300x300.png
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">6 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Expert instruction</span>
+
+                  <h3 class="h3">
+                    <a href="https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/
+                    " target="_blank" class="tracked-link" data-link-id="4" class="card-title">Linux Foundation Certified System Administrator (LFCS)
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.3 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹31,400</data>
+
+                    <ul class="card-meta-list">
+                  
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">20000 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/5a/f3453b0bcd4761b0c86af6e0b59ae4/Capture4.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner </span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/projects/command-line-linux
+                    " target="_blank" class="tracked-link" data-link-id="5" class="card-title" target="_blank">Command Line in Linux
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">Free</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">115 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=378,height=auto,quality=85,format=webp/media/course/image/ee317c5b-3ec4-473f-a7bd-4fa987c846d3-37eb6732dfac.jpeg
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">115 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Begineer</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.edx.org/learn/linux/ibm-linux-commands-shell-scripting?index=product&objectID=course-ee317c5b-3ec4-473f-a7bd-4fa987c846d3&webview=false&campaign=Linux+Commands+%26+Shell+Scripting&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Flearn%2Flinux
+                    " target="_blank" class="tracked-link" data-link-id="6" class="card-title">IBM: Linux Commands & Shell Scripting
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 /79 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹15,000</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">139,285 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://miro.medium.com/v2/resize:fit:730/0*SOW9caZs9ouRukN8.jpg
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.netacad.com/courses/os-it/ndg-linux-unhatched
+                    " target="_blank" class="tracked-link" data-link-id="7" class="card-title">NDG Linux Unhatched
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">Free </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3,617 reviews</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=378,height=auto,quality=85,format=webp/media/course/image/215f9db9-9591-49e6-a227-8bf293ba4b7b-77ad75375cc6.png
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">20 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.edx.org/learn/linux/the-linux-foundation-open-source-software-development-linux-for-developers?index=product&objectID=course-215f9db9-9591-49e6-a227-8bf293ba4b7b&webview=false&campaign=Open+Source+Software+Development%3A+Linux+for+Developers&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Flearn%2Flinux
+                    " target="_blank" class="tracked-link" data-link-id="8" class="card-title">LinuxFoundationX: Open Source Software Development: Linux for Developers
+
+                </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">Free</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">350 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/93/ab9a20c81711e8888807689cc8fd41/Introduction-to-Open-Source-Software-Development_-Git-and-Linux.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&q=50&fit=crop
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">150 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Begineer to Intermediate</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/specializations/oss-development-linux-git
+                    " target="_blank" class="tracked-link" data-link-id="9" class="card-title">Open Source Software Development, Linux and Git Specialization
+                </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹3499</data>
+
+                  <ul class="card-meta-list">
+<!-- 
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">7900 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          
+          
+        
+
+        </div>
+      </section>
+
+      
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Attach click event listeners to all tracked links
+    document.querySelectorAll('.tracked-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            const linkId = this.getAttribute('data-link-id');
+            // Send AJAX request to increment click count for this link
+            fetch(`/increment-click-count/${linkId}`, { method: 'POST' })
+                .then(response => {
+                    if (!response.ok) {
+                        console.error('Failed to increment click count');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    });
+</script>
+
+
+</body>
+</html>

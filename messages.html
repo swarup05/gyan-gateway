@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+    <h1>Feedback Data</h1>
+    <table id="feedbackTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Submitted At</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch the feedback data from the server
+        fetch('/feedback-data')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#feedbackTable tbody');
+                data.forEach(feedback => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${feedback.id}</td>
+                        <td>${feedback.name}</td>
+                        <td>${feedback.email}</td>
+                        <td>${feedback.message}</td>
+                        <td>${feedback.submitted_at}</td>
+                        <td><button class="delete-btn" onclick="deleteFeedback(${feedback.id})"><i class="fas fa-trash"></i></button></td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching feedback data:', error);
+            });
+
+        // Function to handle deleting feedback
+        function deleteFeedback(id) {
+    if (confirm('Are you sure you want to delete this feedback?')) {
+        fetch(`/delete-feedback/${id}`, {
+            method: 'DELETE'
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Feedback deleted successfully');
+                location.reload(); // Reload the page to refresh the data
+            } else {
+                alert('Failed to delete feedback');
+            }
+        })
+        .catch(error => {
+            console.error('Error deleting feedback:', error);
+        });
+    }
+}
+
+
+    </script>
+</body>
+</html>

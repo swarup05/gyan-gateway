@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- 
+      - primary meta tag
+    -->
+    <title>EduWeb - Minor project of team HAPP</title>
+    <meta name="title" content="EduWeb - Minor project of team HAPP">
+  
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet">
+  
+    <!-- 
+      - preload images
+    -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  
+  </head>
+<body>
+    <!-- 
+    - #HEADER
+  -->
+         
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar style="position: sticky;">
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="dashboard.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./dashboard.html#college" class="navbar-link" data-nav-link>College Courses</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart" title="Cart">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+    
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="courses" aria-label="course">
+        <div class="container">
+
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://www.thinknexttraining.com/images/DSA-course-min.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Web development" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">8 months</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Specialization</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.codingninjas.com/cpp-data-structures-and-algorithms-course?utm_source=google&utm_medium=%5Bsearch%5D&utm_campaign=17292057044_138477005004_e_data%20structures%20and%20algorithms%20online%20training_598501599073_c_9040229&gad_source=1&gclid=CjwKCAjw88yxBhBWEiwA7cm6pYozIt99fknkUOUr4col_EW_JVBSgTT0bF9arQS2KG-4bjTaxNUc8BoCkacQAvD_BwE
+                    " target="_blank" class="card-title">Data Structures and Algorithms Using C++ Course
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.8 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹24,499</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">30,000 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg
+                  " width="370" height="220" loading="lazy"
+                    alt="DSA" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">16 weeks</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Beginner to Advanced</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.geeksforgeeks.org/courses/dsa-self-paced?source=google&medium=cpc&device=c&keyword=data%20structures%20and%20algorithms%20course&matchtype=b&campaignid=21104441956&adgroup=160438012512&gad_source=1&gclid=CjwKCAjw88yxBhBWEiwA7cm6pWFYZVPlShYY8o6lUjY8Ttjzxn02w9B5bZlaEjJXSn7yXu27mZujwxoCSv0QAvD_BwE
+                    " target="_blank" class="card-title">Data Structures and Algorithms - Self Paced
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.6 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">₹30,000</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">1,00,000 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="data:image/png;base64,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" width="370" height="220" loading="lazy"
+                    alt="cloud" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">200 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Specialization</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/specializations/data-structures-algorithms
+                    " target="_blank" class="card-title">"Data Structures and Algorithms Specialization"
+                    
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.7  Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹30,000 </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13,092 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <br>
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=378,height=auto,quality=85,format=webp/media/course/image/49da3125-a471-4615-b9fe-693f045f8d38-aa7ff35be196.png
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">65 Hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Expert instruction</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.edx.org/learn/data-structures/iitbombay-foundations-of-data-structures?index=product&objectID=course-49da3125-a471-4615-b9fe-693f045f8d38&webview=false&campaign=Foundations+of+Data+Structures&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Flearn%2Fdata-structures
+
+                    " target="_blank" class="card-title">IITBombayX: Foundations of Data Structures
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.3 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">₹12,436</data>
+
+                    <ul class="card-meta-list">
+                  
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">25,000 Enrollments </span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://media.geeksforgeeks.org/img-practice/prod/courses/198/Mobile/Content/DSA-min_1705410720.png
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">40 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner </span>
+
+                  <h3 class="h3">
+                    <a href="https://online.codingblocks.com/courses/data-structures-and-algorithms-online-course#
+
+                    " target="_blank" class="card-title" target="_blank">Algo++ Data Structures & Algorithms
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">₹2,100</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">11500 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=378,height=auto,quality=85,format=webp/media/course/image/db4a9bb6-0ece-4edf-a7d2-3295ce022fb7-b83313fffcd2.jpg
+
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">70 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge"> Certified Course</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.edx.org/learn/data-structures/the-university-of-california-san-diego-data-structures-an-active-learning-approach?index=product&objectID=course-db4a9bb6-0ece-4edf-a7d2-3295ce022fb7&webview=false&campaign=Data+Structures%3A+An+Active+Learning+Approach&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Flearn%2Fdata-structures
+                    " target="_blank" class="card-title">UCSanDiegoX: Data Structures: An Active Learning Approach
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹4,173</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">11,285 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/44/2959b0502911e5851f058ad6ebf936/pythondata_thumbnail_1x1.png?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&q=50&fit=crop
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Linux" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">18 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/learn/python-data
+
+                    " target="_blank" class="card-title">Python Data Structures
+
+                    </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="29">Free </data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span"> 10 courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">94,764 reviews</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://www.upgrad.com/__khugblog-next/image/?url=https%3A%2F%2Fd14b9ctw0m6fid.cloudfront.net%2Fugblog%2Fwp-content%2Fuploads%2F2020%2F11%2Fdata-str-and-alg.png&w=750&q=75
+
+                  " width="370" height="220" loading="lazy"
+                    alt="Cyber security" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">20 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Beginner</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.upgrad.com/blog/data-structures-algorithm-free-online-course/
+
+                    " target="_blank" class="card-title">Data Structures and Algorithm Free Online Course with Certification
+
+                </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.5 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="49">Free</data>
+
+                  <ul class="card-meta-list">
+
+                    <!-- <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">15 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">37,500 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/UCSD_JavaProgrammingOODDS_Getty483605575.jpg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&q=50&fit=crop
+                  " width="370" height="220" loading="lazy"
+                    alt="AI/ML" class="img-cover">
+                </figure>
+
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">160 hours</span>
+                </div>
+
+                <div class="card-content">
+
+                  <span class="badge">Specialization</span>
+
+                  <h3 class="h3">
+                    <a href="https://www.coursera.org/specializations/java-object-oriented
+                    " target="_blank" class="card-title">Object Oriented Java Programming: Data Structures and Beyond Specialization
+                  </a>
+                  </h3>
+
+                  <div class="wrapper">
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">(4.9 Rating)</p>
+
+                  </div>
+
+                  <data class="price" value="35">₹16,799</data>
+
+                  <ul class="card-meta-list">
+<!-- 
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">13 Courses</span>
+                    </li> -->
+
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">73,104 Enrollments</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          
+          
+        
+
+        </div>
+      </section>
+
+      
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

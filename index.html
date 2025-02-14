@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body style="background-image: url('./assets/images/hero-bg.svg');">
+    <div class="container">
+        <div class="left-side">
+    <video width="100%" class="big-image" height="100%" autoplay loop muted >
+        <source src="https://media.istockphoto.com/id/1500506939/video/young-caucasian-woman-working-on-laptop-at-her-home-office.mp4?s=mp4-640x640-is&k=20&c=pETJMQNeJuPQ6VcA0wmL8VEimGx93OknCi5W-lrR2n8=" type="video/mp4" >
+       
+    </video>
+</div>
+        <div class="right-side">
+            
+            <div class="box">
+                <h1 class="p1">eduweb</h1>
+                <p class="p2">Welcome Student</p>
+                <form action="/login" method="POST">
+                    <input type="text" class="inp1" name="username" placeholder="Enter your username" required>
+                    <input type="password" class="inp1" name="password" placeholder="Enter your password" required>
+                    <button type="submit" class="btn2">Log in to eduweb</button>
+                </form>
+                <p class="p3">Not a member?<a href="register.html" class="a1">Sign up</a></p>
+                <a href="#" class="a1">Forgot your password?</a>
+                <p class="p4">By continuing, you agree to eduweb's <a href="#">terms</a> and acknowledge you've read our <a href="#">privacy policy</a></p>
+               
+                <p id="loginasadmin"><a href="adminlogin.html" class="a2">I am Admin</a></p>
+                <p id="loginasadmin"><a href="teacherlogin.html" class="a2">I am a Teacher</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
