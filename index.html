@@ -31,14 +31,20 @@
         </div>
     </div>
     <script>
-        function checkLogin() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            if (username && password) {
+        async function checkLogin() {
+            const response = await fetch('users.json');
+            const users = await response.json();
+            
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+            const validUser = users.find(user => user.username === username && user.password === password);
+            
+            if (validUser) {
                 window.location.href = "dashboard.html";
                 return false; // Prevent form submission
             } else {
-                alert("Please enter both username and password.");
+                alert("Invalid username or password.");
                 return false;
             }
         }
