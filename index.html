@@ -30,24 +30,5 @@
             </div>
         </div>
     </div>
-    <script>
-        async function checkLogin() {
-            const response = await fetch('users.json');
-            const users = await response.json();
-            
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-            
-            const validUser = users.find(user => user.username === username && user.password === password);
-            
-            if (validUser) {
-                window.location.href = "dashboard.html";
-                return false; // Prevent form submission
-            } else {
-                alert("Invalid username or password.");
-                return false;
-            }
-        }
-    </script>
 </body>
 </html>
